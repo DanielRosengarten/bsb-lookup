@@ -21,7 +21,6 @@ BQL,MEB Bank of Queensland Limited,944
 BOT,"MUFG Bank, Ltd.",29
 BYB,Beyond Bank Australia Limited,325
 LBA,Bank of Sydney Ltd,942
-BCP,BC Payments Australia Pty Ltd,252
 BBL,Bendigo and Adelaide Bank Limited,633
 BBL,ADL Adelaide Bank (a division of Bendigo and Adelaide Bank Limited),610
 BNP,BNP Paribas,22
@@ -43,24 +42,22 @@ DBA,Deutsche Bank Aktiengesellschaft,41
 DBL,Defence Bank Limited,833
 ENC,Australian Mutual Bank Limited,823
 ENC,SEL Australian Mutual Bank Limited,611
-FPX,Flash Partners Pty Ltd,370
 GTW,Gateway Bank Ltd,676
 GCB,G&C Mutual Bank Limited,659
-GBS,Greater Bank (a division of Newcastle Greater Mutual Group Ltd),"630, 637, 680"
+GBS,Greater Bank Ltd,"630, 637, 680"
 GPA,Global Payments Australia 1 Pty Ltd,820
 HAY,Cuscal Limited,636
-HBS,Heritage and People's Choice Limited,"638, 880"
+HBS,Heritage Bank Limited,"638, 880"
+HCC,Holiday Coast (now known as Regional Australia Bank Ltd),721
 HSB,"Hongkong & Shanghai Banking Corporation Limited (The), Australian Branch",985
 HBA,HSBC Bank Australia Limited,34
 HUM,Hume Bank Limited,640
-IBA,International Bank of Australia Pty Limited,688
 IMB,IMB Ltd,"641, 647"
 IMB,STH IMB Ltd,824
 CUS,Indue Ltd,70
 IBK,Industrial and Commercial Bank of China Limited,819
 ING,ING Bank (Australia) Limited (trading as ING),923
 GNI,"ING Bank, NV (Sydney Branch)",936
-IBG,Islamic Bank Australia Pty Ltd,690
 CMB,"JP Morgan Chase Bank, National Association",21
 JUD,Judo Bank Pty Ltd,725
 KEB,KEB Hana Bank,323
@@ -72,7 +69,7 @@ ICB,"Mega International Commercial Bank Co, Ltd",931
 MCB,"Mizuho Bank, Ltd",918
 MSL,Tyro Payments Limited,969
 NAB,National Australia Bank Limited,08
-NEW,Newcastle Greater Mutual Group Ltd,650
+NEW,Newcastle Permanent Building Society Ltd,650
 OCB,Oversea-Chinese Banking Corporation Limited,45
 ONE,in1bank Limited,311
 PCU,Police Bank Ltd (trading as Police Bank),815
@@ -84,7 +81,6 @@ QCB,Queensland Country Bank Limited,654
 QTM,Members Banking Group Limited Trading as RACQ Bank,514
 RCU,Railways Credit Union Limited t/a MOVE Bank,724
 RAB,Regional Australia Bank Limited,932
-RAB,HCC Regional Australia Bank Limited,721
 RBA,Reserve Bank of Australia,09
 ROK,MyState Bank Limited,655
 SCB,"Standard Chartered Bank, Australia Branch",43
