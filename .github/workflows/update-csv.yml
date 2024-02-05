@@ -24,12 +24,16 @@ jobs:
         run: python .github/workflows/scripts/csv_update.py
       - id: get-date
         run: echo "date=$(date +'%B-%Y')" >> $GITHUB_OUTPUT
-      - id: set-file-date
+      - id: file-date
         env:
           FNAME: ${{ steps.update-csvs.outputs.bsb_prefix_file }}
         run:
-          echo "file_date=${FNAME##*(}" >> $GITHUB_OUTPUT
-          echo "file-date="${steps.set-file-date.outputs.file-date%%)*} >> $GITHUB_OUTPUT
+          echo "first-change=${FNAME##*(}" >> $GITHUB_OUTPUT
+      - id: get-file-date
+        env:
+          NEWFNAME: ${{ steps.file-date.outputs.first-change }}
+        run:
+          echo "file-date="${NEWFNAME%%)*} >> $GITHUB_OUTPUT
       - uses: peter-evans/create-pull-request@v6
         id: raise-pr
         with:
