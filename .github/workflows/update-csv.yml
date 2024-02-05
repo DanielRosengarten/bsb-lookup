@@ -28,7 +28,7 @@ jobs:
         env:
           FNAME: ${{ steps.update-csvs.outputs.bsb_prefix_file }}
         run:
-          echo "file-date=${FNAME##*(%)*}" >> $GITHUB_OUTPUT
+          echo "file-date=${FNAME##*(}%%)*" >> $GITHUB_OUTPUT
       - uses: peter-evans/create-pull-request@v6
         id: raise-pr
         with:
