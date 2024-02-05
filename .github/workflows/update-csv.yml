@@ -23,10 +23,12 @@ jobs:
         id: update-csvs
         run: python .github/workflows/scripts/csv_update.py
       - id: get-date
+        run: echo "date=$(date +'%B-%Y')" >> $GITHUB_OUTPUT
+      - id: set-file-date
         env:
           FNAME: ${{ steps.update-csvs.outputs.bsb_prefix_file }}
-        run: echo "date=$(date +'%B-%Y')" >> $GITHUB_OUTPUT
-             echo "last-month=${FNAME##*(%%)*}" >> $GITHUB_OUTPUT
+        run:
+          echo "last-month=${FNAME##*(%%)*}" >> $GITHUB_OUTPUT
       - uses: peter-evans/create-pull-request@v6
         id: raise-pr
         with:
