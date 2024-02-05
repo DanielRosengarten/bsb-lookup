@@ -29,16 +29,16 @@ jobs:
           FNAME: ${{ steps.update-csvs.outputs.bsb_prefix_file }}
         run:
           echo "first-change=${FNAME##*(}" >> $GITHUB_OUTPUT
-      - id: get-file-date
+      - id: set-file-date
         env:
           NEWFNAME: ${{ steps.file-date.outputs.first-change }}
         run:
-          echo "file-date="${NEWFNAME%%*)} >> $GITHUB_OUTPUT
+          echo "file-date="${NEWFNAME%%)*} >> $GITHUB_OUTPUT
       - uses: peter-evans/create-pull-request@v6
         id: raise-pr
         with:
           branch: "bot/automate-ftp/${{ steps.get-date.outputs.date }}"
-          title: "chore: update bsb directory with ${{ steps.file-date.outputs.first-change }} data"
+          title: "chore: update bsb directory with ${{ steps.set-file-date.outputs.file-date }} data"
           commit-message: "chore: update bsb directory with ${{ steps.set-file-date.outputs.file-date }} data"
           body: "Updated csv files using files: ${{ steps.update-csvs.outputs.bsb_prefix_file }}\n
                   and ${{ steps.update-csvs.outputs.bsb_directory_file }}.\n\n
