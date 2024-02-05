@@ -33,7 +33,7 @@ jobs:
         env:
           NEWFNAME: ${{ steps.file-date.outputs.first-change }}
         run:
-          echo "file-date="${NEWFNAME%%)*} >> $GITHUB_OUTPUT
+          echo "file-date="${NEWFNAME%)*} >> $GITHUB_OUTPUT
       - uses: peter-evans/create-pull-request@v6
         id: raise-pr
         with:
